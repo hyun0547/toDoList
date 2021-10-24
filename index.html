@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="dust-info"></div>
+
+    <div class="today po-ab dp-flex fl-di-col">
+      <div class="hello">hello</div>
+      <div class="date">00 00 일요일</div>
+      <div class="clock">00:00</div>
+    </div>
+
+    <div class="form-wrap dp-flex fl-di-col po-ab">
+      <form class="search-form">
+        <input class="search" type="text" placeholder="Google" required />
+      </form>
+      <form class="todo-form">
+        <input
+          class="todo-input"
+          type="text"
+          placeholder="To Do List"
+          required
+        />
+      </form>
+    </div>
+
+    <ul class="todo-list po-ab"></ul>
+
+    <script src="./script/clock.js"></script>
+    <script src="./script/hello.js"></script>
+    <script src="./script/todo.js"></script>
+    <script src="./script/search.js"></script>
+    <script src="./script/weather.js"></script>
+    <script src="./script/background.js"></script>
+  </body>
+</html>

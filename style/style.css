@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+/*노멀라이즈*/
+input:focus {
+  outline: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li,
+ul {
+  list-style: none;
+}
+/*라이브러리*/
+.po-ab {
+  position: absolute;
+}
+.dp-flex {
+  display: flex;
+}
+.fl-di-col {
+  flex-direction: column;
+}
+button {
+  background-color: inherit;
+  border: inherit;
+}
+
+/*메인*/
+
+.today {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+.today > div {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.hello {
+  font-size: 20px;
+}
+.date {
+  font-size: 50px;
+}
+.clock {
+  font-size: 40px;
+}
+
+.form-wrap {
+  width: 350px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%);
+}
+.form-wrap input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.form-wrap input {
+  transition: 0.2s;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+.form-wrap input:focus {
+  transform: scale(1.1);
+}
+.search {
+  margin-bottom: 20px;
+}
+.search:focus {
+  background-color: #ddd;
+}
+.todo-input:focus {
+  background-color: rgb(144, 172, 197);
+}
+
+.todo-list {
+  top: 60%;
+  left: 20%;
+}
+.todo-list button {
+  font-size: 18px;
+  color: steelblue;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.dust-info span {
+  display: flex;
+}
+body {
+  height: 100vh;
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+body > img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
